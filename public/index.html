@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DataBase App Demo.</title>
+    </head>
+    <body>
+        <h1>DataBase App Demo.</h1>
+        <div>
+
+          <div id="loginPage" class="container text-center">
+              <div class="row">
+                  <div class="col-md-4 col-md-offset-4">
+                      <h2> Please sign in / log in</h2>
+                      <label for="usernameInput" class="sr-only">Login</label>
+                      <input type="email" id="usernameInput" class="form-control formgroup"
+                             placeholder="Login" required="" autofocus="" >
+
+
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 col-md-offset-4">
+
+                      <label for="usernameInput" class="sr-only">Password</label>
+                      <input  id="usernameInput" class="form-control formgroup"
+                             placeholder="Login" required="" autofocus="" >
+
+                      <button id="loginBtn" class="btn btn-lg btn-primary btnblock" onclick="LogIn()">
+                          Sign in/Log in
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+<div id="transactionPage" class="container text-center">
+
+            <input type="checkbox" id="chkInternetConnection" defaultChecked="checked" onclick="internetConnection()">
+            <label for="chkInternetConnection">Internet connection</label><br>
+            <label for="txtPhoneLines">Phone lines</label>
+            <input type="number" id="txtPhoneLines" value="0" onclick="phoneLines()">
+            <br>
+            <label for="cmbCellPhones">Cell phones:</label>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <select id="txtCellPhones" size="5">
+                            <option value="moto">Motorola G99</option>
+                            <option value="iphone">iPhone 99</option>
+                            <option value="samsung">Samsung Galaxy 99</option>
+                            <option value="sony">Sony Xperia 99</option>
+                            <option value="huawei">Huawei 99</option>
+
+
+
+
+
+
+
+
+
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="&gt;">
+                        <br>
+                        <input type="button" value="&lt;">
+                    </td>
+                    <td>
+                        <select id="txtChosenCellPhones" size="5" style="width: 150px">
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+
+              <div id="totalArea">Total price: 0 DKK</div>
+
+            <br>
+            <button type="button" onclick="my3rdFunction()">Insert option</button>
+            <input type="submit"  value="Buy">
+        </div>
+    </div>
+        <script src="main.js"></script>
+    </body>
+</html>
